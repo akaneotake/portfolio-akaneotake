@@ -1,0 +1,22 @@
+.content-height {
+  display: flex;
+  height: 100svh;
+  align-items: center;
+}
+
+.content-text {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.bg-parallax {
+  background-image: url(./images/header-background-cloud.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
