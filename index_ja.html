@@ -6,6 +6,8 @@
   <title>Akane's Portfolio</title>
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/fe1102712b.js" crossorigin="anonymous"></script>
   <!-- Google Fonts -->
   <!-- Montserrat -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,20 +17,23 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
-
   <!-- CSS -->
   <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
 <body>
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+  <!-- ナビゲーションバー -->
+  <nav class="navbar fixed-top navbar-expand-lg bg-white opacity-50">
     <div class="container">
-      <div class="mx-auto">
-        <a class="navbar-brand" href="#">A</a>
-      </div>
-      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+      <!-- ★★トグルメニューの形後で変更★★ -->
+      <button class="navbar-toggler border-0 text-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
+      <div class="mx-auto pe-5">
+        <a class="navbar-brand" href="#">A</a>
+      </div>
 
       <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
         <ul class="navbar-nav">
@@ -55,6 +60,7 @@
     </div>  
   </nav>
 
+  <!-- トップ -->
   <div id="top-banner">
     <div class="container-fluid content-height">
       <div class="content-text">
@@ -64,6 +70,7 @@
     </div>
   </div>
 
+  <!-- このサイトについて -->
   <div id="about-this-site">
     <div class="container-fluid content-height bg-parallax">
       <div class="content-text">
@@ -77,15 +84,16 @@
     </div>
   </div>
 
+  <!-- 私について -->
   <div id="about-me">
     <div class="container-fluid content-height">
       <div class="content-text">
         <h2>About me</h2>
         <div class="row">
-          <div class="col-4 d-flex align-items-center">            
+          <div class="col-md-4 d-flex align-items-center">            
             <img src="./images/AkaneOtakeCVPhoto.jpg" class="rounded-circle" alt="Akane Otake" width="200px" height="200px"/>
           </div>  
-          <div class="col-8 ps-4 about-me-text">
+          <div class="col-md-8 ps-4 about-me-text">
             <h4>大竹あかね</h4>
             <p>千葉県出身。2011年より在独。ドイツでの様々な経験を綴ったブログページを自分でカスタマイズしていくうちに、Webサイト制作の楽しさとITに興味を持つようになる。<br>
             ブロガーの経験を活かしてWEBライターとして働いたあと、2023年から「Altcademy」というアメリカのオンラインブートキャンプにてフルスタック・プログラミングについて勉強しています。
@@ -100,6 +108,7 @@
     </div>
   </div>
 
+  <!-- 作品 -->
   <div id="works">
     <div class="container-fluid content-height-lg bg-parallax">
       <div class="content-text-lg">
@@ -108,68 +117,65 @@
           腕によりをかけて制作した制作物を紹介します。
         </p>
         
-        <div class="row between-works">
+        <div class="row">
           <!-- 通貨両替アプリ -->
-          <div class="col-4">
+          <div class="col-xs-1 col-md-4 col-lg-3">
             <a class="work-img" href="https://young-forest-87511-ff6cab5648f1.herokuapp.com/" target="_blank" rel="noopener noreferrer"><img src="images/project-currency-exchange-app.png" alt="通貨両替アプリ" /></a>
             <h4>通貨両替アプリ</h4>
             <p class="text-smaller">ReactとReact Routerを使用したSPAの通貨両替アプリ。トップページでは異なる通貨のレートや過去のチャートが動的に表示されるほか、ボタンでの通貨消去・ドラッグ＆ドロップでの通貨並び替えが可能。別ページではトップページに表示させる通貨の選択ができる。</p>
           </div>
 
           <!-- 10秒計算ゲーム -->
-          <div class="col-4">
+          <div class="col-xs-1 col-md-4 col-lg-3">
             <a class="work-img" href="https://akaneotake-10-sec-maths-game.netlify.app/" target="_blank" rel="noopener noreferrer"><img src="images/10-sec-maths-game.JPG" alt="10秒計算ゲーム" /></a>
             <h4>10秒計算ゲーム</h4>
             <p class="text-smaller">JavaScript/jQueryを使用した動的な計算ゲーム。ユーザーは好きな演算子 (+/-/x/÷) や数字の最大数を選べるほか、スコア計算やハイスコアの表示機能もあり。</p>
           </div>
           
           <!-- To Doリスト -->
-          <div class="col-4">
+          <div class="col-xs-1 col-md-4 col-lg-3">
             <a class="work-img" href="https://akaneotake-to-do-list.netlify.app/" target="_blank" rel="noopener noreferrer"><img src="images/to-do-list.JPG" alt="To Doリスト" /></a>
             <h4>To Doリスト</h4>
             <p class="text-smaller"><a href="https://fewd-todolist-api.onrender.com/" target="_blank" rel="noopener noreferrer">ATDAPI</a>の情報によりDOMにレンダリングされるTo Doリスト。追加/削除や完了/未完ボタンでリストを整理できるほか、タスクをステータスごとに表示する切り替え機能もあり。</p>
           </div>
 
-        <div class="row between-works">
           <!-- 買い物リスト -->
-          <div class="col-4">
+          <div class="col-xs-1 col-md-4 col-lg-3">
             <a class="work-img" href="https://akaneotake-shopping-cart.netlify.app/" target="_blank" rel="noopener noreferrer"><img src="images/shopping-cart.JPG" alt="買い物リスト" /></a>
             <h4>買い物リスト</h4>
             <p class="text-smaller">JavaScript/jQueryとDOM構造・Bootstrap3のグリッド構造を使用した買い物リスト。各アイテムの小計と合計を表示。ボタンによりアイテムの追加・削除が可能。</p>
           </div>
 
           <!-- ブラックジャック -->
-          <div class="col-4">
+          <div class="col-xs-1 col-md-4 col-lg-3">
             <a class="work-img" href="https://replit.com/@AkaneOtake/Black-Jack-advanced-ver" target="_blank" rel="noopener noreferrer"><img src="images/advanced-black-jack.png" alt="ブラックジャック" /></a>
             <h4>ブラックジャック</h4>
             <p class="text-smaller">ポップアップを利用したブラックジャックゲーム。JavaScript ES5使用。ユーザーは1人プレイかディーラーと対戦するかを選べる。対ディーラーモードでは、ゲーム上のお金を賭けることが可能。カードはランダムに配布され、重複がないように保存される。</p>
           </div>
 
           <!-- じゃんけん -->
-          <div class="col-4">
+          <div class="col-xs-1 col-md-4 col-lg-3">
             <a class="work-img" href="https://replit.com/@AkaneOtake/Rock-Paper-Scissors" target="_blank" rel="noopener noreferrer"><img src="images/rock-paper-scissors.png" alt="じゃんけん" /></a>
             <h4>じゃんけん</h4>
             <p class="text-smaller">ポップアップを利用したじゃんけんゲーム。JavaScript ES5使用。2点先制モードでは、獲得した得点がゲーム終了まで保持される。</p>
           </div>
-        </div>
-
-        <div class="row between-works">
+   
           <!-- Airbnb クローン -->
-          <div class="col-4">
+          <div class="col-xs-1 col-md-4 col-lg-3">
             <a class="work-img" href="https://phenomenal-lokum-63b582.netlify.app" target="_blank" rel="noopener noreferrer"><img src="images/project-airbnb-news-clone.png" alt="Airbnb クローン" /></a>
             <h4>Airbnb クローン</h4>
             <p class="text-smaller">AirbnbのNewsページのクローン。HTML/CSS使用、レスポンシブ対応。レイアウト、ドロップダウンメニュー付きナビゲーションバー、スクロールにBootstrap4使用。</p>
           </div>
 
           <!-- Newsweek クローン -->
-          <div class="col-4">
+          <div class="col-xs-1 col-md-4 col-lg-3">
             <a class="work-img" href="https://imaginative-druid-324695.netlify.app" target="_blank" rel="noopener noreferrer"><img src="images/project-newsweek-clone.png" alt="Newsweek クローン" /></a>
             <h4>Newsweek クローン</h4>
             <p class="text-smaller">Newsweekランディングページのクローン。HTML/CSS、Bootstrap3のグリッド構造使用。モバイル・レスポンシブ対応。</p>
           </div>
 
           <!-- Apple クローン -->
-          <div class="col-4">
+          <div class="col-xs-1 col-md-4 col-lg-3">
             <a class="work-img" href="https://poetic-malasada-c3c66f.netlify.app" target="_blank" rel="noopener noreferrer"><img src="images/project-apple-clone.png" alt="Apple クローン" /></a>
             <h4>Apple クローン</h4>
             <p class="text-smaller">HTML/CSSのみを使用したAppleメインページのクローン。</p>
@@ -179,19 +185,108 @@
     </div>
   </div>
 
+  <!-- スキル・証明書 -->
   <div id="skills">
-    <div class="container-fluid content-height">
+    <div class="container-fluid content-height-lg">
       <div class="content-text">
-        <h2>Skills</h2>
+        <h2>Skills & Certificates</h2>
         <p>
-          修練のすえ身につけたスキルをまとめました。広く浅くではありますがフロントからバックエンドまで幅広くスキルアップに取り組んできました。オールラウンドに対応できる点が強みですが、全体的に理解が浅く、専門性の低さを認識しています。今後は、、、と考えています。
+          アメリカのオンラインブートキャンプ「Altcademy」で身につけたスキルと取得した証明書をまとめました。
         </p>
+        <h3>Skills</h3>
+        <div class="row">
+          <div class="col-3 col-md-2 skill-item">
+            <i class="fa-brands fa-html5"></i>
+            <p>HTML 5</p>
+          </div>
+          <div class="col-3 col-md-2 skill-item">
+            <i class="fa-brands fa-css3-alt"></i>
+            <p>CSS 3</p>
+          </div>
+          <div class="col-3 col-md-2 skill-item">
+            <i class="fa-brands fa-bootstrap"></i>
+            <p>Bootstrap<br>3/4/5</p>
+          </div>
+          <div class="col-3 col-md-2 skill-item">
+            <i class="fa-brands fa-git"></i>
+            <p>Git</p>
+          </div>
+          <div class="col-3 col-md-2 skill-item">
+            <i class="fa-brands fa-github"></i>
+            <p>GitHub</p>
+          </div>
+          <div class="col-3 col-md-2 skill-item">
+            <i class="fa-brands fa-js"></i>
+            <p>JavaScript</p>
+          </div>
+          <div class="col-3 col-md-2 skill-item">
+            <i class="fa-brands fa-js"></i>
+            <p>JavaScript ES6</p>
+          </div>
+          <div class="col-3 col-md-2 skill-item">
+            <img src="images/jquery48px.png" alt="jQuery" />
+            <p>jQuery</p>
+          </div>
+          <div class="col-3 col-md-2 skill-item">
+            <i class="fa-solid fa-folder-tree"></i>
+            <p>DOM</p>
+          </div>
+          <div class="col-3 col-md-2 skill-item">
+            <i class="fa-solid fa-a"></i>
+            <p>Ajax</p>
+          </div>
+          <div class="col-3 col-md-2 skill-item">
+            <i class="fa-solid fa-underline"></i>
+            <p>Underscore.js</p>
+          </div>
+          <div class="col-3 col-md-2 skill-item">
+            <i class="fa-brands fa-react"></i>
+            <p>React</p>
+          </div>
+          <div class="col-3 col-md-2 skill-item">
+            <i class="fa-brands fa-react"></i>
+            <p>React Hooks</p>
+          </div>
+          <div class="col-3 col-md-2 skill-item">
+            <img src="images/react-router-svgrepo-com .jpg" alt="React-Router" />
+            <p>React Router</p>
+          </div>
+          <div class="col-3 col-md-2 skill-item">
+            <img src="images/ruby.png" alt="Ruby" />
+            <p>Ruby</p>
+          </div>
+        </div>
+
+        <h3>Certificates</h3>
+        <div class="row between-rows">
+          <div class="col-md-6 col-lg-4 certificate-item">
+            <a href="https://www.altcademy.com/@crimson_hill_340/certificate/webdesignium" target="_blank" rel="noopener noreferrer"><img class="img-fluid" src="images/certificate_HTML-CSS.png" alt="Certificate for HTML CSS Development" /></a>
+            <h6 class="certificates-title">HTML CSS Development</h6>
+          </div>
+
+          <div class="col-md-6 col-lg-4 certificate-item">
+            <a href="https://www.altcademy.com/@crimson_hill_340/certificate/javascriptium" target="_blank" rel="noopener noreferrer"><img class="img-fluid" src="images/certificate_JavaScript.png" alt="Certificate for JavaScript Programming" /></a>
+            <h6 class="certificates-title">JavaScript Programming</h6>
+          </div>
+
+          <div class="col-md-6 col-lg-4 certificate-item">
+            <a href="https://www.altcademy.com/@crimson_hill_340/certificate/jqueryium" target="_blank" rel="noopener noreferrer"><img class="img-fluid" src="images/certificate_Dynamic-Website-Development.png" alt="Certificate for Dynamic Website Development" /></a>
+            <h6 class="certificates-title">Dynamic Website Development</h6>
+          </div>
+
+          <div class="col-md-6 col-lg-4 certificate-item">
+            <a href="https://www.altcademy.com/@crimson_hill_340/certificate/reactjs" target="_blank" rel="noopener noreferrer"><img class="img-fluid" src="images/certificate_ReactJS.png" alt="Certificate for ReactJS Development" /></a>
+            <h6 class="certificates-title">ReactJS Development</h6>
+          </div>
+
+        </div>
       </div>
     </div>
   </div>
 
+  <!-- 経歴 -->
   <div id="profile">
-    <div class="container-fluid content-height bg-parallax">
+    <div class="container-fluid content-height-lg bg-parallax">
       <div class="content-text">
         <h2>Profile</h2>
         <p>
@@ -215,6 +310,7 @@
     </div>
   </div>
 
+  <!-- 連絡先 -->
   <div id="contact">
     <div class="container-fluid content-height">
       <div class="content-text">
@@ -226,6 +322,7 @@
     </div>
   </div>
 
+  <!-- 最後に -->
   <div id="bottom-banner">
     <div class="container-fluid content-height bg-parallax">
       <div class="content-text">
