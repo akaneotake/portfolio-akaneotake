@@ -1,3 +1,12 @@
+.toggler-outline:focus {
+  outline: none !important;
+  box-shadow:none !important;
+}
+
+.navbar-nav a.active { 
+  color: #28A745; 
+}
+
 h1, h2, h3, h4, h5 {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -72,6 +81,23 @@ p {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.next-page-btn {
+  color: black;
+}
+
+/* Floating Move for Button */
+.float-move {
+  animation: float-move 1.3s ease-in-out infinite alternate-reverse;
+}
+@keyframes float-move {
+  0% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(10%);
+  }
 }
 
 @media screen and (min-width: 576px) {
