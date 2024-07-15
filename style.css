@@ -1,8 +1,10 @@
+/* Navbar */
 .toggler-outline:focus {
   outline: none;
   box-shadow:none;
 }
 
+/* General */
 h1, h2, h3, h4, h5 {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -79,11 +81,12 @@ p {
   background-repeat: no-repeat;
 }
 
+/* Top */
 .next-page-btn {
   color: black;
 }
 
-/* Floating Move for Button */
+/* Floating move for next page button */
 .float-move {
   animation: float-move 1.3s ease-in-out infinite alternate-reverse;
 }
@@ -96,12 +99,28 @@ p {
   }
 }
 
+/* About me */
+
 @media screen and (min-width: 576px) {
   .about-me-text {
     text-align: left;
   }
 }
 
+.about-me-links {
+  text-align: center;
+}
+
+.about-me-link {
+  color: black;
+  margin: 10px;
+}
+
+.about-me-link > i {
+  font-size: 50px;
+}
+
+/* Works */
 .work-item {
   padding-bottom: 40px;
 }
@@ -135,6 +154,8 @@ p {
   font-size: smaller;
 }
 
+/* Skills & Certificates */
+
 .skill-item > i {
   font-size: 50px;
 }
@@ -154,6 +175,7 @@ p {
   padding-bottom: 30px;
 }
 
+/* Contact */
 input {
   border: 0;
   height: 3rem;
