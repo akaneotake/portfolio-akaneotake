@@ -6,10 +6,10 @@ window.onload = function() {
       emailjs.sendForm('service_v9b4t1r', 'template_rjssscq', this)
           .then(function() {
               console.log('SUCCESS!');
-
-
+              messageSent();
           }, function(error) {
               console.log('FAILED...', error);
+              messageNotSent();
           });
   });
 }
@@ -28,3 +28,14 @@ window.addEventListener("DOMContentLoaded", () => {
     this.style.height = `${this.scrollHeight}px`;
   }
 });
+
+// Show message when sent
+function messageSent() {
+  const formSent = document.querySelector(".form-sent");
+  formSent.style.display = "block";
+};
+
+function messageNotSent() {
+  const formSent = document.querySelector(".form-not-sent");
+  formSent.style.display = "block";
+};

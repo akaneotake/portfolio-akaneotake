@@ -179,3 +179,13 @@ textarea {
   text-align: left;
   padding: 0;
 }
+
+.form-sent {
+  display: none;
+  color: blue;
+}
+
+.form-not-sent {
+  display: none;
+  color: red;
+}
