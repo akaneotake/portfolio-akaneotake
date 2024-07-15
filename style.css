@@ -3,10 +3,6 @@
   box-shadow:none !important;
 }
 
-.navbar-nav a.active { 
-  color: #28A745; 
-}
-
 h1, h2, h3, h4, h5 {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -156,4 +152,18 @@ p {
 
 .certificate-item {
   padding-bottom: 30px;
+}
+
+input {
+  height: 3rem;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid rgba(118, 118,118);
+}
+
+textarea {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
 }
