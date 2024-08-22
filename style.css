@@ -228,6 +228,20 @@ p {
     margin: 0 auto;
 }
 
+.sub-window-img {
+  height: 150px;
+  width: 90%;
+  border: solid 2px gray;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+.sub-window-img:hover {
+  transform: scale(1.1,1.1);
+  transition-duration: 0.2s;
+  box-shadow: 0 3px 3px 3px rgba(187, 185, 185, 0.5);
+  }
+
 /* Skills & Certificates */
 .skill-item > i {
   font-size: 50px;
