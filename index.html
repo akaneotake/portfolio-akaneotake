@@ -153,6 +153,26 @@
         </p>
         
         <div class="row">
+          <!-- 画面上で書けるプロフィール帳 -->
+          <div class="col-sm-6 col-md-4 col-lg-3 work-item">
+            <label for="sub-profile-note" class="work-img">
+              <img src="images/profile-note.png" alt="画面上で書けるプロフィール帳" />
+              <h4>画面上で書けるプロフィール帳</h4>
+            </label>
+            <input type="checkbox" id="sub-profile-note" class="check-sub-window" />
+            <label for="sub-profile-note" class="bg-sub-window">
+              <label for="close-blocker" class="sub-window">
+                <label for="sub-profile-note" class="close-sub-window"></label>
+                <div class="sub-window-content">
+                  <p class="text-smaller">小中学生の時に流行ったプロフィール帳。<br>自分で文字入れしづらいという友人たちの声から、画面上で記述・ダウンロードできるプロフィール帳を作成しました。<br>JavaScript/jQuery使用。<br>html2canvasを使い、画像 + 画像上の書き込みをプレビューとして描写・ダウンロードが可能。<br>テキストは数種類のフォント・色・字の太さからさまざまな組み合わせを選択できます。<br>inputは文字の入力量によってフォントサイズが自動で変化。<br>その他、html2canvasで起こりえる様々なバグ（画像に対するobject-fitが適用されないなど）を解決済み。<br><br><a href="https://github.com/akaneotake/profile-note" target="_blank" rel="noopener noreferrer">Github</a></p>
+                  <a class="work-img" href="https://akaneotake.github.io/profile-note/" target="_blank" rel="noopener noreferrer">
+                    <div class="sub-window-img" style="background-image: url('images/profile-note.png')"></div>
+                  </a>
+                </div>
+              </label>
+            </label>
+          </div>
+
           <!-- 通貨両替アプリ -->
           <div class="col-sm-6 col-md-4 col-lg-3 work-item">
             <label for="sub-currency-exchange-app" class="work-img">
@@ -164,7 +184,8 @@
               <label for="close-blocker" class="sub-window">
                 <label for="sub-currency-exchange-app" class="close-sub-window"></label>
                 <div class="sub-window-content">
-                  <p class="text-smaller">ReactとReact Routerを使用したSPAの通貨両替アプリ。<br>トップページでは異なる通貨のレートや過去のチャートが動的に表示されるほか、ボタンでの通貨消去・ドラッグ＆ドロップでの通貨並び替えが可能。<br>別ページでは、トップページに表示させる通貨の選択ができる。</p>
+                  <p class="text-smaller">
+                    ReactとReact Routerを使用したSPAの通貨両替アプリ。<br>トップページでは異なる通貨のレートや過去のチャートが動的に表示されるほか、ボタンでの通貨消去・ドラッグ＆ドロップでの通貨並び替えが可能。<br>別ページでは、トップページに表示させる通貨の選択ができる。<br><br><a href="https://github.com/akaneotake/currency-exchange-app-with-hooks" target="_blank" rel="noopener noreferrer">Github(with React hooks)</a><br><a href="https://github.com/akaneotake/currency-exchange-app" target="_blank" rel="noopener noreferrer">Github(without React hooks)</a></p>
                   <a class="work-img" href="https://young-forest-87511-ff6cab5648f1.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                     <div class="sub-window-img" style="background-image: url('images/project-currency-exchange-app.png')"></div>
                   </a>
@@ -184,7 +205,7 @@
               <label for="close-blocker" class="sub-window">
                 <label for="sub-10-sec-maths-game" class="close-sub-window"></label>
                 <div class="sub-window-content">
-                  <p class="text-smaller">JavaScript/jQueryを使用した動的な計算ゲーム。<br>ユーザーは好きな演算子 (+/-/x/÷) や数字の最大数を選べるほか、スコア計算やハイスコアの表示機能も付いてます。</p>
+                  <p class="text-smaller">JavaScript/jQueryを使用した動的な計算ゲーム。<br>ユーザーは好きな演算子 (+/-/x/÷) や数字の最大数を選べるほか、スコア計算やハイスコアの表示機能も付いてます。<br><br><a href="https://github.com/akaneotake/10-sec-maths-game" target="_blank" rel="noopener noreferrer">Github</a></p>
                   <a class="work-img" href="https://akaneotake-10-sec-maths-game.netlify.app/" target="_blank" rel="noopener noreferrer">
                     <div class="sub-window-img" style="background-image: url('images/10-sec-maths-game.JPG')"></div>
                   </a>
@@ -204,7 +225,7 @@
               <label for="close-blocker" class="sub-window">
                 <label for="sub-to-do-list" class="close-sub-window"></label>
                 <div class="sub-window-content">
-                  <p class="text-smaller"><a href="https://fewd-todolist-api.onrender.com/" target="_blank" rel="noopener noreferrer">ATDAPI</a>の情報によりDOMにレンダリングされるTo Doリスト。<br>追加/削除や完了/未完ボタンでリストを整理できるほか、タスクをステータスごとに表示する切り替え機能も付けました。</p>
+                  <p class="text-smaller"><a href="https://fewd-todolist-api.onrender.com/" target="_blank" rel="noopener noreferrer">ATDAPI</a>の情報によりDOMにレンダリングされるTo Doリスト。<br>JavaScript/jQuery使用。<br>追加/削除や完了/未完ボタンでリストを整理できるほか、タスクをステータスごとに表示する切り替え機能も付けました。<br><br><a href="https://github.com/akaneotake/todoList" target="_blank" rel="noopener noreferrer">Github</a></p>
                   <a class="work-img" href="https://akaneotake-to-do-list.netlify.app/" target="_blank" rel="noopener noreferrer">
                     <div class="sub-window-img" style="background-image: url('images/to-do-list.JPG')"></div>
                   </a>
@@ -224,29 +245,9 @@
               <label for="close-blocker" class="sub-window">
                 <label for="sub-shopping-cart" class="close-sub-window"></label>
                 <div class="sub-window-content">
-                  <p class="text-smaller">JavaScript/jQueryとDOM構造・Bootstrap3のグリッド構造を使用した買い物リスト。<br>各アイテムの小計と合計を表示。<br>ボタンによりアイテムの追加・削除が可能。</p>
+                  <p class="text-smaller">JavaScript/jQueryとDOM構造・Bootstrap3のグリッド構造を使用した買い物リスト。<br>各アイテムの小計と合計を表示。<br>ボタンによりアイテムの追加・削除が可能。<br><br><a href="https://github.com/akaneotake/shopping_cart" target="_blank" rel="noopener noreferrer">Github</a></p>
                   <a class="work-img" href="https://akaneotake-shopping-cart.netlify.app/" target="_blank" rel="noopener noreferrer">
                     <div class="sub-window-img" style="background-image: url('images/shopping-cart.JPG')"></div>
-                  </a>
-                </div>
-              </label>
-            </label>
-          </div>
-
-          <!-- 画面上で書けるプロフィール帳 -->
-          <div class="col-sm-6 col-md-4 col-lg-3 work-item">
-            <label for="sub-profile-note" class="work-img">
-              <img src="images/profile-note.png" alt="画面上で書けるプロフィール帳" />
-              <h4>画面上で書けるプロフィール帳</h4>
-            </label>
-            <input type="checkbox" id="sub-profile-note" class="check-sub-window" />
-            <label for="sub-profile-note" class="bg-sub-window">
-              <label for="close-blocker" class="sub-window">
-                <label for="sub-profile-note" class="close-sub-window"></label>
-                <div class="sub-window-content">
-                  <p class="text-smaller">小中学生の時に流行ったプロフィール帳。<br>自分で文字入れしづらいという友人たちの声から、画面上で記述・ダウンロードできるプロフィール帳を作成しました。<br>html2canvasを使い、画像 + 画像上の書き込みをプレビューとして描写・ダウンロードが可能。<br>テキストは数種類のフォント・色・字の太さからさまざまな組み合わせを選択できます。<br>inputは文字の入力量によってフォントサイズが自動で変化。<br>その他、html2canvasで起こりえる様々なバグ（画像に対するobject-fitが適用されないなど）を解決済みです。</p>
-                  <a class="work-img" href="https://akaneotake.github.io/profile-note/" target="_blank" rel="noopener noreferrer">
-                    <div class="sub-window-img" style="background-image: url('images/profile-note.png')"></div>
                   </a>
                 </div>
               </label>
@@ -264,7 +265,7 @@
               <label for="close-blocker" class="sub-window">
                 <label for="sub-black-jack" class="close-sub-window"></label>
                 <div class="sub-window-content">
-                  <p class="text-smaller">ポップアップを利用したブラックジャックゲーム。<br>JavaScript ES5使用。<br>ユーザーは1人プレイかディーラーと対戦するかを選べる。<br>対ディーラーモードでは、ゲーム上のお金を賭けて遊べる。<br>カードはランダムに配布され、重複がないように保存される。</p>
+                  <p class="text-smaller">ポップアップを利用したブラックジャックゲーム。<br>JavaScript ES5使用。<br>ユーザーは1人プレイかディーラーと対戦するかを選べる。<br>対ディーラーモードでは、ゲーム上のお金を賭けて遊べる。<br>カードはランダムに配布され、重複がないように保存される。<br><br><a href="https://github.com/akaneotake/blackjack" target="_blank" rel="noopener noreferrer">Github</a></p>
                   <a class="work-img" href="https://replit.com/@AkaneOtake/Black-Jack-advanced-ver" target="_blank" rel="noopener noreferrer">
                     <div class="sub-window-img" style="background-image: url('images/advanced-black-jack.png')"></div>
                   </a>
@@ -284,7 +285,7 @@
               <label for="close-blocker" class="sub-window">
                 <label for="sub-rock-paper-scissors" class="close-sub-window"></label>
                 <div class="sub-window-content">
-                  <p class="text-smaller">ポップアップを利用したじゃんけんゲーム。<br>JavaScript ES5使用。<br>2点先制モードでは、獲得した得点がゲーム終了まで保持される。</p>
+                  <p class="text-smaller">ポップアップを利用したじゃんけんゲーム。<br>JavaScript ES5使用。<br>2点先制モードでは、獲得した得点がゲーム終了まで保持される。<br><br><a href="https://github.com/akaneotake/rock_paper_scissors_game" target="_blank" rel="noopener noreferrer">Github</a></p>
                   <a class="work-img" href="https://replit.com/@AkaneOtake/Rock-Paper-Scissors" target="_blank" rel="noopener noreferrer">
                     <div class="sub-window-img" style="background-image: url('images/rock-paper-scissors.png')"></div>
                   </a>
